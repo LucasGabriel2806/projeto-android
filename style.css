@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte0);
+  line-height: 2em;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+  --fonte0: Arial, Helvetica, sans-serif;
+  --fonte1: "Bebas Neue", cursive;
+  --fonte2: "idroid", sans-serif;
+}
+
+@font-face {
+  font-family: idroid;
+  src: url(fontes/idroid.otf) format("opentype");
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--cor1);
+}
+
+.font-idroid {
+  font-family: var(--fonte2);
+}
+
+.fonte-estilo1 {
+  font-family: var(--fonte1);
+  font-size: 48px;
+}
+
+.fonte-estilo2 {
+  font-family: var(--fonte0);
+}
+
+header {
+  background-image: linear-gradient(180deg, var(--cor2), var(--cor4));
+  color: white;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+  text-align: center;
+  padding: 3%;
+}
+
+header > h1 {
+  text-transform: uppercase;
+}
+
+header > p {
+  font-size: 1.2em;
+  text-indent: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+nav {
+  background-color: var(--cor4);
+  font-weight: bold;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.363);
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 15px;
+  transition-duration: 0.5s;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: var(--cor3);
+  color: var(--cor4);
+}
+
+main {
+  min-width: 400px;
+  max-width: 800px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+}
+
+main strong {
+  color: var(--cor4);
+  font-weight: bold;
+}
+
+main .espaco-interno {
+  padding: 20px;
+  margin: auto;
+}
+
+h1.heading-verde {
+  color: var(--cor4);
+}
+
+h2.heading-verde {
+  color: #1a5c37;
+  background-image: linear-gradient(to right, var(--cor0), white);
+}
+
+.marca-texto {
+  color: var(--cor4);
+  font-weight: 900;
+}
+
+.marca-link > a {
+  color: var(--cor4);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.marca-link::after {
+  content: "\00A0\00260D";
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+img.img-dan-droids,
+.img-irina-blok {
+  width: 100%;
+}
+
+.fundo-video {
+  background-color: var(--cor5);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.video {
+  width: 100%;
+  height: 500px;
+}
+
+aside {
+  border-radius: 10px;
+  background-color: var(--cor0);
+  margin: 20px;
+}
+
+aside > h2 {
+  color: white;
+  background-color: var(--cor3);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+aside p {
+  padding: 10px;
+}
+
+aside ul {
+  padding-left: 10px;
+}
+
+.lista-v {
+  /** Nao é compativel com todos os navegadores
+  0020 ou 00A0 é espaço, que nem nbsp */
+  list-style-type: "\2714\0020\0020";
+  columns: 2;
+  list-style-position: inside;
+}
+
+p {
+  text-indent: 50px;
+}
+
+footer {
+  background-color: var(--cor5);
+  color: var(--cor0);
+  text-align: center;
+  padding: 10px;
+}
